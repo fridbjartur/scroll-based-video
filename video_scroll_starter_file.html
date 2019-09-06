@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll in video</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .outerVideoContainer {
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+      }
+
+      .innerVideoContainer {
+        height: 1800px;
+      }
+
+      video {
+        position: fixed;
+        width: 100%;
+        object-fit: fill;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="outerVideoContainer">
+      <div class="innerVideoContainer">
+        <video src="video/theVideo.mp4"></video>
+      </div>
+    </div>
+
+    <script src="video_scroll.js"></script>
+  </body>
+</html>
